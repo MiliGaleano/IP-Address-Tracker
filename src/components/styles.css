@@ -1,0 +1,218 @@
+button, input, input:focus {
+    border:none;
+    outline:none;
+    outline-width: 0;
+    box-shadow: none;
+}
+
+h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+/* loading */
+.divloading{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading{
+    border: 4px solid rgba(0, 0, 0, .1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-left-color: #09f;
+    animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* map */
+.divMap{
+    position: absolute;
+    top: 33vh;
+    right: 0;
+    z-index: 1;
+}
+
+.leaflet-marker-icon:hover{
+    filter:hue-rotate(50deg);
+}
+
+/* header */
+.divHeader{
+    position: fixed;
+    width: 100vw;
+    height: 33vh;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    filter: drop-shadow(0px 4px 4px rgba(100, 100, 100, 0.25));
+}
+
+.h1header{
+    color: white;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.divInput{
+    width: 100vw;
+    margin-top: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    filter: drop-shadow(0px 4px 4px rgba(100, 100, 100, 0.25));
+}
+
+.inputHeader{
+    width: 360px;
+    padding: 1em;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    font-weight: 500;
+    color:rgb(170, 170, 170);
+}
+
+.inputHeader:hover{
+    background-color: rgb(246, 246, 246);
+    color:rgb(0, 0, 0);
+}
+
+.buttonHeader{
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 1.4em;
+    width: 40px;
+    padding: 0;
+    border: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+.buttonHeader:hover{
+    background-color: rgb(44, 44, 44);
+}
+
+/* ipCard */
+.divIpCard{
+    width: 80vw;
+    min-height: 20vh;
+    position: absolute;
+    top: 23vh;
+    right: 10vw;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(100, 100, 100, 0.25));
+    align-items: center;
+}
+
+.divSectionCard{
+    width: 19vw;
+    min-height: 15vh;
+    border: none;
+}
+
+hr{
+    width: 1px;
+    height: 10vh;
+    border: none;
+    border-right: 1px solid rgb(223, 223, 223);
+}
+
+.firstdiv{
+    padding-left: 1.5vw;
+}
+
+.noBorder{
+    border-right: none;
+}
+
+.h2Card{
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.7em;
+    padding: 1vw 1.5vw 1vw 1.5vw;
+    color: rgb(149, 149, 149);
+}
+.h1Card{
+    padding: 1.5vw;
+    padding-top: 0;
+    font-size: 1.5em;
+}
+
+
+@media (max-width: 1000px) {
+
+    .h1Card{
+        font-size: 1em;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    /* header */
+    .inputHeader{
+        width: 78vw;
+        padding: 1em 1vw 1em 1vw;
+    }
+    
+    .buttonHeader{
+        width: 8vw;
+    }
+
+/* ipCard */
+.divIpCard{
+    width: 88vw;
+    top: 20vh;
+    right: 6vw;
+}
+
+.divSectionCard{
+    width: 100%;
+    min-height: 2vh;
+    text-align: center;
+    padding: 2vw;
+    padding-bottom: 0vw;
+}
+
+hr{
+    display: none;
+}
+
+.firstdiv{
+    padding-top: 3vw;
+}
+
+.noBorder{
+    padding-bottom: 3vw;
+}
+
+.h2Card{
+    font-size: 0.6em;
+}
+.h1Card{
+    font-size: 1em;
+}
+
+
+
+
+}
